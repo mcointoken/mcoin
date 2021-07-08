@@ -1,3 +1,7 @@
+# <img src="https://github.com/mcointoken/mcoin/blob/master/mcoin/logo_mcoin.png" alt="WiBX" width="150px">
+
+
+
 # How to Install
 
 ## Ethereum smart contract
