@@ -1,4 +1,4 @@
-const AxiaToken = artifacts.require('./contracts/AxiaToken.sol');
+const MCoinToken = artifacts.require('./contracts/MCoinToken.sol');
 
 module.exports = async function (callback)
 {
@@ -15,7 +15,7 @@ module.exports = async function (callback)
         return trap(new Error(`The amount is not valid! '${amount}'`));
     }
 
-    const token = await AxiaToken.deployed();
+    const token = await MCoinToken.deployed();
     const coinbase = (await web3.eth.getAccounts())[0];
 
     console.log(`Sending ${amount} Axiers to ${toAddress}...`);

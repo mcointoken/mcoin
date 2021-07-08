@@ -1,5 +1,5 @@
 const { BN, expectRevert } = require('openzeppelin-test-helpers');
-const AxiaToken = artifacts.require('AxiaToken');
+const MCoinToken = artifacts.require('MCoinToken');
 const { applyTax } = require('./helpers/tax');
 const expectEvent = require('./helpers/expectEvent');
 const {
@@ -11,18 +11,18 @@ const {
 } = require('./helpers/constants');
 
 /**
- * AxiaToken Principal EC20 Functionalities.
+ * MCoinToken Principal EC20 Functionalities.
  *
  * Originally based on code by OpenZeppelin:
  * https://github.com/OpenZeppelin/openzeppelin-solidity/blob/master/test/token/ERC20/ERC20.test.js
  */
-contract('AxiaToken: Common ERC20 Functionalities', ([owner, recipient, anotherAccount, taxRecipientAddr, boardAccount, burner]) =>
+contract('MCoinToken: Common ERC20 Functionalities', ([owner, recipient, anotherAccount, taxRecipientAddr, boardAccount, burner]) =>
 {
     let tokenInstance;
 
     beforeEach(async () =>
     {
-        tokenInstance = await AxiaToken.new(taxRecipientAddr);
+        tokenInstance = await MCoinToken.new(taxRecipientAddr);
     });
 
     describe('total supply', () =>

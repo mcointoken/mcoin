@@ -7,7 +7,7 @@ node_js:
 
 cache:
   directories:
-    - axia/node_modules
+    - mcoin/node_modules
 
 jobs:
   # XXX fast_finish doesn't work with stages yet. See
@@ -19,21 +19,21 @@ jobs:
     - stage: tests
       name: "Linter"
       script:
-        - cd axia
+        - cd mcoin
         - npm install
         - npm run lint
 
     - stage: tests
       name: "Unit tests"
       script:
-        - cd axia
+        - cd mcoin
         - npm install
         - npm run build:test
 
     - stage: tests
       name: "Unit tests with coverage report"
       script:
-        - cd axia
+        - cd mcoin
         - npm install
         - npm run build:test
       env: SOLIDITY_COVERAGE=true

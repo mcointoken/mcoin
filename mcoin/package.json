@@ -1,12 +1,12 @@
 {
-    "name": "axia",
+    "name": "mcoin",
     "version": "1.0.0",
-    "description": "Axia Smart Contracts",
+    "description": "MCoin Smart Contracts",
     "license": "Apache-2.0",
     "private": true,
     "author": {
         "name": "Mateus Santos",
-        "email": "mateus@axiadigitalsolutions.com"
+        "email": "mateus@mcoindigitalsolutions.com"
     },
     "scripts": {
         "test": "truffle test",

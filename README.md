@@ -2,7 +2,7 @@
 
 ## Ethereum smart contract
 
-Inside the `axia` directory, contains a [Truffle Framework](https://truffleframework.com) project. So you can do all Truffle operations.
+Inside the `mcoin` directory, contains a [Truffle Framework](https://truffleframework.com) project. So you can do all Truffle operations.
 
 Installation of local dependencies:
 ```

@@ -1,3 +1,9 @@
+/**
+ * This smart contract code is Copyright 2021 MCOIN. For more information see https://mcoin.show/
+ *
+ * Licensed under the Apache License, version 2.0.
+ */
+
 pragma solidity 0.5.16;
 
 import "openzeppelin-solidity/contracts/token/ERC20/ERC20Pausable.sol";
@@ -8,9 +14,9 @@ import "openzeppelin-solidity/contracts/math/SafeMath.sol";
 import "./Taxable.sol";
 
 /**
- * @title Axia Utility Token
+ * @title MCoin Utility Token
  *
- * @dev Implementation of the main Axia token smart contract.
+ * @dev Implementation of the main MCoin token smart contract.
  */
 contract MCoinToken is ERC20Pausable, ERC20Burnable, ERC20Detailed, Taxable
 {
@@ -131,7 +137,7 @@ contract MCoinToken is ERC20Pausable, ERC20Burnable, ERC20Detailed, Taxable
     }
 
     /**
-     * @dev Special Axia transfer token for a specified address.
+     * @dev Special MCoin transfer token for a specified address.
      *
      * @param from The address of the spender
      * @param to The address to transfer to.

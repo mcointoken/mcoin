@@ -1,5 +1,5 @@
 const { BN, expectRevert } = require('openzeppelin-test-helpers');
-const AxiaToken = artifacts.require('AxiaToken');
+const MCoinToken = artifacts.require('MCoinToken');
 const { applyTax } = require('./helpers/tax');
 const expectEvent = require('./helpers/expectEvent');
 const {
@@ -8,13 +8,13 @@ const {
     ALL_TAXES_SHIFT
 } = require('./helpers/constants');
 
-contract('AxiaToken: Taxable', ([owner, recipient, anotherAccount, taxRecipientAddr]) =>
+contract('MCoinToken: Taxable', ([owner, recipient, anotherAccount, taxRecipientAddr]) =>
 {
     let tokenInstance;
 
     beforeEach(async () =>
     {
-        tokenInstance = await AxiaToken.new(taxRecipientAddr);
+        tokenInstance = await MCoinToken.new(taxRecipientAddr);
     });
 
     describe('Tax administration', () =>
